@@ -1,6 +1,10 @@
 import { faLocation, faLocationDot, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+const notify = () => toast("Congratulations!");
 
 const SideBar = ({cart}) => {
 
@@ -10,7 +14,7 @@ const SideBar = ({cart}) => {
     }
 
     const restTimeButton = (id) =>{
-      document.getElementById('restTime').innerText = document.getElementById(id).innerText; 
+        document.getElementById('restTime').innerText = document.getElementById(id).innerText;
     }
 
     return (
@@ -68,7 +72,8 @@ const SideBar = ({cart}) => {
                     <h3 className=' bg-white font-bold'>Rest time <span className='ml-12 text-slate-300'><span id='restTime' className='text-slate-900'>0</span> second</span></h3>
                 </div>
             </div>
-            <button className='w-60 pt-2 pb-2 m-auto bg-slate-900 text-white font-bold rounded-lg mt-4 '>Activity Completed</button>
+            <button className='w-60 pt-2 pb-2 m-auto bg-slate-900 text-white font-bold rounded-lg mt-4 ' onClick={notify}>Activity Completed</button>
+            <ToastContainer />
         </div>
     );
 };
