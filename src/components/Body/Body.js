@@ -28,6 +28,7 @@ const Body = () => {
                         key={item.id}></Card>)
                 }
             </div>
+{ /*--------------- Details side bar /  cart ---------------*/ }
             <div className='p-4 bg-slate-100'>
                 <SideBar cart={cart}></SideBar>
             </div>

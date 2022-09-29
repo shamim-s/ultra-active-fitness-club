@@ -15,6 +15,7 @@ const SideBar = ({cart}) => {
 
     return (
         <div>
+    {/* ------------------Profile container ---------------------*/}
             <div className='flex mt-5 mb-3'>
                 <h1 className='text-5xl mr-2'><FontAwesomeIcon icon={faUser}></FontAwesomeIcon></h1>
                 <div>
@@ -23,6 +24,7 @@ const SideBar = ({cart}) => {
                 </div>
             </div>
 
+        {/* ------------------Hight weight and length container ---------------------*/}
             <div className='flex justify-around items-center bg-slate-900 h-20 rounded-lg'>
                 <div className='text-white'>
                     <h1 className='text-2xl'>65<span className='text-base'>kg</span></h1>
@@ -40,6 +42,7 @@ const SideBar = ({cart}) => {
 
             <h1 className='text-2xl text-slate-900 font-bold mt-5'>Add A Break</h1>
 
+        {/* ------------------Group button container ---------------------*/}
             <div className='flex justify-around items-center mt-5 bg-slate-200 h-20 rounded-lg'>
                 <div  onClick={()=>restTimeButton('one')} className='bg-slate-400 hover:bg-slate-900 hover:text-white font-bold rounded-full p-2 cursor-pointer'>
                     <h1><span id='one'>10</span>s</h1>
@@ -56,7 +59,7 @@ const SideBar = ({cart}) => {
             </div>
 
             <h1 className='text-2xl text-slate-900 font-bold mt-5'>Exercise Details</h1>
-
+    {/* ------------------Exercise details container ---------------------*/}
             <div className='mt-5'>
                 <div className='flex p-2 bg-white rounded-lg mb-4'>
                     <h3 className=' bg-white font-bold'>Exercise time <span className='ml-4 text-slate-900'>{requiredTime} <span className='text-slate-300'>second</span></span></h3>
