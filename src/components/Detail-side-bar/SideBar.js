@@ -2,7 +2,12 @@ import { faLocation, faLocationDot, faUser } from '@fortawesome/free-solid-svg-i
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-const SideBar = () => {
+const SideBar = ({cart}) => {
+    let requiredTime = 0;
+    for(const item of cart){
+        requiredTime = requiredTime + parseInt(item.required)
+    }
+    console.log(requiredTime);
     return (
         <div>
             <div className='flex mt-5 mb-3'>
@@ -44,7 +49,7 @@ const SideBar = () => {
             <h1 className='text-2xl text-slate-900 font-bold mt-5'>Exercise Details</h1>
             <div className='mt-5'>
                 <div className='flex p-2 bg-white rounded-lg mb-4'>
-                    <h3 className=' bg-white font-bold'>Exercise time <span className='ml-4 text-slate-300'>200 second</span></h3>
+                    <h3 className=' bg-white font-bold'>Exercise time <span className='ml-4 text-slate-900'>{requiredTime} <span className='text-slate-300'>second</span></span></h3>
                 </div>
                 <div className='flex p-2 bg-white rounded-lg'>
                     <h3 className=' bg-white font-bold'>Rest time <span className='ml-12 text-slate-300'>10 second</span></h3>

@@ -5,7 +5,7 @@
       "detail": "Jamie Grill/Getty ImagesThe side plank is one of the easiest ways to work the two  the sides of your core, known as your obliques.",
       "name": "Side Plank",
       "age":"20-30",
-      "required":"40s"
+      "required":"40"
     },
     {
       "id": "633493aa7db46a4b9bd7420e",
@@ -13,62 +13,62 @@
       "detail": "Cycling, also, when on a two-wheeled bicycle, called bicycling or biking, is the use of cycles for transport, exercise or sport.",
       "name": "Cycling",
       "age":"20-30",
-      "required":"40s"
+      "required":"30"
     },
     {
       "id": "633493aa65835c14233fc169",
       "picture": "./images/image-3.jpg",
-      "detail": "This move is similar to regular lateral raises, except here you raise the  leading to more rear deltoid and trap development.",
+      "detail": "This move is similar to regular lateral raises, except here you raise the  leading to move is similar to regular move is similar to regular",
       "name": "Rear Delt Raises",
       "age":"20-30",
-      "required":"40s"
+      "required":"45"
     },
     {
       "id": "633493aa261e1b66fbda7f89",
       "picture": "./images/image-4.jpg",
-      "detail": "Deadlifting is a fairly basic movement, but it’s one that poses lots of risk to your back if done incorrectly. Here’s a step-by-step guide on how to deadlift.",
+      "detail": "Deadlifting is a fairly basic movement, but its one that poses lots of risk to your back if done step-by-step guide on how to deadlift.",
       "name": "Deadlifting",
       "age":"20-30",
-      "required":"40s"
+      "required":"35"
     },
     {
       "id": "633493aaea55f10a840dcb93",
       "picture": "./images/image-5.jpg",
-      "detail": "Battling ropes are used for fitness training to increase full body strength and conditioning. It was designed by John Brookfield system around 2006 in his backyard.",
+      "detail": "Battling ropes are used for fitness training to increase full body strength and conditioning. It was  in his backyard.",
       "name": "Battling Ropes",
       "age":"20-30",
-      "required":"40s"
+      "required":"40"
     },
     {
       "id": "633493aa313dcd12477a3890",
       "picture": "./images/image-6.jpg",
-      "detail": "Planks are a core strengthening move that never gets old and there are seemingly endless (like side planks, pictured above) of your core.",
+      "detail": "Planks are a core strengthening move that never gets old and there are seemingly endless  of your core.",
       "name": "Planks",
       "age":"20-30",
-      "required":"40s"
+      "required":"30"
     },
     {
       "id": "633493aa40d5b79c7ac1769a",
       "picture": "./images/image-7.jpg",
-      "detail": "The squat is one of the most basic, fundamental compound moves to have in your arsenal. The barbell back squat is the classic go-to, ",
+      "detail": "The squat is one of the most basic, fundamental compound moves to have in your arsenal. is the classic go-to, ",
       "name": "Squat",
       "age":"20-30",
-      "required":"40s"
+      "required":"30"
     },
     {
       "id": "633493aaf599f1cf094f7173",
       "picture": "./images/image-8.jpg",
-      "detail": "Swimming is one of the most popular sports in Australia. Our nation is surrounded by swimming is one of our great passions.",
+      "detail": "Swimming is one of the most popular sports in Australia. Our nation is surrounded  great passions.",
       "name": "Swimming",
       "age":"20-30",
-      "required":"40s"
+      "required":"45"
     },
     {
       "id": "633493aa3bdce0cb3bfef243",
       "picture": "./images/image-9.jpg",
-      "detail": "The push-up is a common calisthenics exercise beginning from the prone position. push-ups exercise the pectoral muscles, and anterior deltoids,",
+      "detail": "The push-up is a common calisthenics exercise beginning from the prone position. push-ups anterior deltoids,",
       "name": "Push-up",
       "age":"20-30",
-      "required":"40s"
+      "required":"40"
     }
   ]

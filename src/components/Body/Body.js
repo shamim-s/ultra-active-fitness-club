@@ -10,15 +10,26 @@ const Body = () => {
         .then(res => res.json())
         .then(data => setItems(data))
     },[])
+
+    const [cart, setRequired] = useState([])
+
+    const buttonHandler = (data) =>{
+        const newArr = [...cart, data]
+        setRequired(newArr);
+    }
+
     return (
         <div className='grid lg:grid-cols-5 md:grid-cols-5'>
             <div className='lg:col-span-4 md:col-span-4 grid lg:grid-cols-3 md:grid-cols-2 gap-10 p-6'>
                 {
-                    items.map(item => <Card data={item}></Card>)
+                    items.map(item => <Card 
+                        data={item} 
+                        buttonHandler={buttonHandler}
+                        key={item.id}></Card>)
                 }
             </div>
             <div className='p-4 bg-slate-100'>
-                <SideBar></SideBar>
+                <SideBar cart={cart}></SideBar>
             </div>
         </div>
     );

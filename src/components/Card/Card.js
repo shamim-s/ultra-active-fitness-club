@@ -13,7 +13,7 @@ const Card = (props) => {
                     <h3 className='mb-2 font-medium'>Required: {required}</h3>
                 </div>
             </div>
-            <button className='bg-zinc-900 text-white pr-8 pl-8 pt-2 pb-2 rounded-lg font-bold absolute bottom-2 left-2'>Add to list</button>
+            <button onClick={()=> props.buttonHandler(props.data)} className='bg-zinc-900 text-white pr-8 pl-8 pt-2 pb-2 rounded-lg font-bold absolute bottom-2 left-2 hover:bg-orange-500'>Add to list</button>
         </div>
     );
 };
