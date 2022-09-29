@@ -3,10 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const SideBar = ({cart}) => {
+
     let requiredTime = 0;
     for(const item of cart){
         requiredTime = requiredTime + parseInt(item.required)
     }
+    
     console.log(requiredTime);
     return (
         <div>
