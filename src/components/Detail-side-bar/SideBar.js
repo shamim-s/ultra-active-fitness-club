@@ -4,6 +4,7 @@ import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+// Open toast after Activity completed button clicked
 const notify = () => toast("Congratulations!");
 
 const SideBar = ({cart}) => {
@@ -15,6 +16,8 @@ const SideBar = ({cart}) => {
 
     const restTimeButton = (id) =>{
         document.getElementById('restTime').innerText = document.getElementById(id).innerText;
+
+        // addeding rest time to local storage 
         const newNum = document.getElementById('restTime').innerText;
         localStorage.setItem('number', newNum);
     }
