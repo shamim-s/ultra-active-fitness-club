@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../Card/Card';
+import SideBar from '../Detail-side-bar/SideBar';
 
 const Body = () => {
     const [items, setItems] = useState([])
@@ -17,7 +18,7 @@ const Body = () => {
                 }
             </div>
             <div className='p-4 bg-slate-100'>
-                
+                <SideBar></SideBar>
             </div>
         </div>
     );
