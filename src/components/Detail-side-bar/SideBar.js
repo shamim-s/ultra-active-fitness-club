@@ -18,7 +18,7 @@ const SideBar = ({cart}) => {
     }
 
     return (
-        <div>
+        <div className='relative'>
     {/* ------------------Profile container ---------------------*/}
             <div className='flex mt-5 mb-3'>
                 <h1 className='text-5xl mr-2'><FontAwesomeIcon icon={faUser}></FontAwesomeIcon></h1>
@@ -72,7 +72,7 @@ const SideBar = ({cart}) => {
                     <h3 className=' bg-white font-bold'>Rest time <span className='ml-12 text-slate-300'><span id='restTime' className='text-slate-900'>0</span> second</span></h3>
                 </div>
             </div>
-            <button className='w-60 pt-2 pb-2 m-auto bg-slate-900 text-white font-bold rounded-lg mt-4 ' onClick={notify}>Activity Completed</button>
+            <button className='lg:w-60 md:w-36 pt-2 pb-2 m-auto bg-slate-900 text-white font-bold rounded-lg mt-4 ' onClick={notify}>Activity Completed</button>
             <ToastContainer />
         </div>
     );
