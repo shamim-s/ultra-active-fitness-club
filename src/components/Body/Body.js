@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../Card/Card';
 import SideBar from '../Detail-side-bar/SideBar';
+import { addFromLs, addToLocalStorage } from '../utilities/fakeDataBase';
 
 const Body = () => {
     const [items, setItems] = useState([])
@@ -11,12 +12,38 @@ const Body = () => {
         .then(data => setItems(data))
     },[])
 
-    const [cart, setRequired] = useState([])
+    // For side bar conatiner 
+    const [cart, setCart] = useState([])
 
-    const buttonHandler = (data) =>{
-        const newArr = [...cart, data]
-        setRequired(newArr);
+    const buttonHandler = (selectedItems) =>{
+        let newDetailCart =[];
+        const existsDetail = cart.find(item => item.id === selectedItems.id)
+        if(!existsDetail){
+            selectedItems.quantity = 1;
+            newDetailCart = [...cart, selectedItems];
+        }else{
+            const restDetails = cart.filter(item => item.id !== selectedItems.id)
+            existsDetail.quantity = existsDetail.quantity + 1;
+            newDetailCart = [...restDetails, existsDetail];
+        }
+        setCart(newDetailCart);
+        addToLocalStorage(selectedItems.id);
     }
+
+// Loading details from local storage 
+    useEffect(()=>{
+        const storedDetails = addFromLs();
+        let savedDetails = [];
+        for(const id in storedDetails){
+            const addedDetails = items.find(item => item.id === id);
+            if(addedDetails){
+                const quantity = storedDetails[id];
+                addedDetails.quantity = quantity;
+                savedDetails.push(addedDetails);
+            }
+        }
+        setCart(savedDetails);
+    },[items])
 
     return (
         <div className='grid lg:grid-cols-5 md:grid-cols-5'>

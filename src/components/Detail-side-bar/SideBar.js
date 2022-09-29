@@ -6,7 +6,7 @@ const SideBar = ({cart}) => {
 
     let requiredTime = 0;
     for(const item of cart){
-        requiredTime = requiredTime + parseInt(item.required)
+        requiredTime = requiredTime + parseInt(item.required * item.quantity);
     }
 
     const restTimeButton = (id) =>{
